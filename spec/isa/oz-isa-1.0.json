@@ -1,0 +1,1061 @@
+{
+  "isa_version": "1.0",
+  "operations": [
+    {
+      "name": "CORE.ADD",
+      "id": 1,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        }
+      ],
+      "returns": "number",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Add two numbers."
+    },
+    {
+      "name": "CORE.SUB",
+      "id": 2,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        }
+      ],
+      "returns": "number",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Subtract b from a."
+    },
+    {
+      "name": "CORE.MUL",
+      "id": 3,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        }
+      ],
+      "returns": "number",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Multiply."
+    },
+    {
+      "name": "CORE.DIV",
+      "id": 4,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        }
+      ],
+      "returns": "number",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Divide a by b. Division by zero is an error."
+    },
+    {
+      "name": "CORE.MOD",
+      "id": 5,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "int"
+        },
+        {
+          "name": "b",
+          "type": "int"
+        }
+      ],
+      "returns": "int",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Integer modulo."
+    },
+    {
+      "name": "CORE.EQ",
+      "id": 6,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "any"
+        },
+        {
+          "name": "b",
+          "type": "any"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Deep equality."
+    },
+    {
+      "name": "CORE.NE",
+      "id": 7,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "any"
+        },
+        {
+          "name": "b",
+          "type": "any"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Deep inequality."
+    },
+    {
+      "name": "CORE.LT",
+      "id": 8,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Less than."
+    },
+    {
+      "name": "CORE.LTE",
+      "id": 9,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Less than or equal."
+    },
+    {
+      "name": "CORE.GT",
+      "id": 10,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Greater than."
+    },
+    {
+      "name": "CORE.GTE",
+      "id": 11,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Greater than or equal."
+    },
+    {
+      "name": "CORE.AND",
+      "id": 12,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "bool"
+        },
+        {
+          "name": "b",
+          "type": "bool"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Logical and."
+    },
+    {
+      "name": "CORE.OR",
+      "id": 13,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "bool"
+        },
+        {
+          "name": "b",
+          "type": "bool"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Logical or."
+    },
+    {
+      "name": "CORE.NOT",
+      "id": 14,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "bool"
+        }
+      ],
+      "returns": "bool",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Logical not."
+    },
+    {
+      "name": "CORE.CONCAT",
+      "id": 15,
+      "version": 1,
+      "params": [
+        {
+          "name": "a",
+          "type": "string"
+        },
+        {
+          "name": "b",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Concatenate strings."
+    },
+    {
+      "name": "CORE.LEN",
+      "id": 16,
+      "version": 1,
+      "params": [
+        {
+          "name": "v",
+          "type": "any"
+        }
+      ],
+      "returns": "int",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Length of string/array/map/bytes."
+    },
+    {
+      "name": "CORE.SLICE",
+      "id": 17,
+      "version": 1,
+      "params": [
+        {
+          "name": "v",
+          "type": "any"
+        },
+        {
+          "name": "start",
+          "type": "int"
+        },
+        {
+          "name": "end",
+          "type": "int"
+        }
+      ],
+      "returns": "any",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Slice string/array/bytes [start:end]."
+    },
+    {
+      "name": "CORE.TOSTRING",
+      "id": 18,
+      "version": 1,
+      "params": [
+        {
+          "name": "v",
+          "type": "any"
+        }
+      ],
+      "returns": "string",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Convert value to string."
+    },
+    {
+      "name": "CORE.HASH_SHA256",
+      "id": 19,
+      "version": 1,
+      "params": [
+        {
+          "name": "v",
+          "type": "any"
+        }
+      ],
+      "returns": "string",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "SHA-256 hex of canonical encoding of value, or of bytes/string content."
+    },
+    {
+      "name": "CORE.TO_JSON",
+      "id": 20,
+      "version": 1,
+      "params": [
+        {
+          "name": "v",
+          "type": "any"
+        }
+      ],
+      "returns": "string",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Serialize value to JSON."
+    },
+    {
+      "name": "CORE.FROM_JSON",
+      "id": 21,
+      "version": 1,
+      "params": [
+        {
+          "name": "s",
+          "type": "string"
+        }
+      ],
+      "returns": "any",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Parse JSON string."
+    },
+    {
+      "name": "CORE.GET",
+      "id": 22,
+      "version": 1,
+      "params": [
+        {
+          "name": "v",
+          "type": "any"
+        },
+        {
+          "name": "key",
+          "type": "any"
+        }
+      ],
+      "returns": "any",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Get map key or array index."
+    },
+    {
+      "name": "CORE.KEYS",
+      "id": 23,
+      "version": 1,
+      "params": [
+        {
+          "name": "v",
+          "type": "map"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Sorted keys of a map."
+    },
+    {
+      "name": "CORE.TYPEOF",
+      "id": 24,
+      "version": 1,
+      "params": [
+        {
+          "name": "v",
+          "type": "any"
+        }
+      ],
+      "returns": "string",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Type name of value."
+    },
+    {
+      "name": "CORE.BASE64_ENCODE",
+      "id": 25,
+      "version": 1,
+      "params": [
+        {
+          "name": "s",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Base64-encode a UTF-8 string."
+    },
+    {
+      "name": "CORE.BASE64_DECODE",
+      "id": 26,
+      "version": 1,
+      "params": [
+        {
+          "name": "s",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Base64-decode to a UTF-8 string. Invalid input is an error."
+    },
+    {
+      "name": "CORE.REGEX_MATCH",
+      "id": 27,
+      "version": 1,
+      "params": [
+        {
+          "name": "pattern",
+          "type": "string"
+        },
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Return array of non-overlapping matches. Bounded pattern/text sizes; invalid patterns are errors."
+    },
+    {
+      "name": "CORE.UUID4",
+      "id": 28,
+      "version": 1,
+      "params": [],
+      "returns": "string",
+      "capability": "compute",
+      "deterministic": false,
+      "approval": false,
+      "description": "Random UUID v4 string. Non-deterministic by design."
+    },
+    {
+      "name": "DATA.SORT",
+      "id": 40,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Sort array of scalars canonically."
+    },
+    {
+      "name": "DATA.SORT_BY",
+      "id": 41,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        },
+        {
+          "name": "field",
+          "type": "string"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Sort array of maps by field."
+    },
+    {
+      "name": "DATA.FILTER_EQ",
+      "id": 42,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        },
+        {
+          "name": "field",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "any"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Keep maps where field == value."
+    },
+    {
+      "name": "DATA.SEARCH_TEXT",
+      "id": 43,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        },
+        {
+          "name": "query",
+          "type": "string"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Keep strings/maps containing query substring (case-sensitive)."
+    },
+    {
+      "name": "DATA.GROUP_BY",
+      "id": 44,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        },
+        {
+          "name": "field",
+          "type": "string"
+        }
+      ],
+      "returns": "map",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Group array of maps by field value (keyed by stringified value)."
+    },
+    {
+      "name": "DATA.FIND_DUPLICATES",
+      "id": 45,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        }
+      ],
+      "returns": "map",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Group identical values; return map of key->array for groups with >1 member. Keys are canonical JSON of the value."
+    },
+    {
+      "name": "DATA.SUMMARIZE",
+      "id": 46,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "any"
+        }
+      ],
+      "returns": "map",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Machine-readable summary: type, count, and for maps key counts."
+    },
+    {
+      "name": "DATA.AGG_SUM",
+      "id": 47,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        },
+        {
+          "name": "field",
+          "type": "string"
+        }
+      ],
+      "returns": "number",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Sum numeric field over array of maps."
+    },
+    {
+      "name": "DATA.UNIQUE",
+      "id": 48,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Deduplicated array, order-preserving."
+    },
+    {
+      "name": "DATA.PROJECT",
+      "id": 49,
+      "version": 1,
+      "params": [
+        {
+          "name": "rows",
+          "type": "array"
+        },
+        {
+          "name": "fields",
+          "type": "array"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Keep only the listed fields of each map. Missing fields are errors."
+    },
+    {
+      "name": "DATA.JSON_GET",
+      "id": 50,
+      "version": 1,
+      "params": [
+        {
+          "name": "doc",
+          "type": "string"
+        },
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "returns": "any",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Dot-path lookup (\"a.b.0\") in a JSON document. Empty path returns the whole document."
+    },
+    {
+      "name": "DATA.CSV_PARSE",
+      "id": 51,
+      "version": 1,
+      "params": [
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ],
+      "returns": "array",
+      "capability": "compute",
+      "deterministic": true,
+      "approval": false,
+      "description": "Parse CSV text (first row is the header) into an array of maps. Bounded."
+    },
+    {
+      "name": "FS.LIST",
+      "id": 60,
+      "version": 1,
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "returns": "array",
+      "capability": "fs.read",
+      "deterministic": false,
+      "approval": false,
+      "description": "List directory entries (names only, sorted). Path is sandbox-relative or allowlisted."
+    },
+    {
+      "name": "FS.STAT",
+      "id": 61,
+      "version": 1,
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "returns": "map",
+      "capability": "fs.read",
+      "deterministic": false,
+      "approval": false,
+      "description": "Stat file/dir: {name,size,mtime,is_dir}."
+    },
+    {
+      "name": "FS.READ_TEXT",
+      "id": 62,
+      "version": 1,
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "fs.read",
+      "deterministic": false,
+      "approval": false,
+      "description": "Read UTF-8 text file (size-limited)."
+    },
+    {
+      "name": "FS.MKDIR",
+      "id": 63,
+      "version": 1,
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "fs.write",
+      "deterministic": false,
+      "approval": false,
+      "description": "Create directory (including parents). Returns path."
+    },
+    {
+      "name": "FS.WRITE_TEXT",
+      "id": 64,
+      "version": 1,
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        },
+        {
+          "name": "content",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "fs.write",
+      "deterministic": false,
+      "approval": false,
+      "description": "Write UTF-8 text file (size-limited). Returns path."
+    },
+    {
+      "name": "FS.MOVE",
+      "id": 65,
+      "version": 1,
+      "params": [
+        {
+          "name": "src",
+          "type": "string"
+        },
+        {
+          "name": "dst",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "fs.write",
+      "deterministic": false,
+      "approval": false,
+      "description": "Move/rename within allowed roots. Returns dst."
+    },
+    {
+      "name": "FS.DELETE",
+      "id": 66,
+      "version": 1,
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "fs.delete",
+      "deterministic": false,
+      "approval": true,
+      "description": "Delete file or empty dir. Requires approval."
+    },
+    {
+      "name": "FS.HASH_FILE",
+      "id": 67,
+      "version": 1,
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "fs.read",
+      "deterministic": false,
+      "approval": false,
+      "description": "SHA-256 hex of file bytes."
+    },
+    {
+      "name": "FS.SEARCH_TEXT",
+      "id": 68,
+      "version": 1,
+      "params": [
+        {
+          "name": "dir",
+          "type": "string"
+        },
+        {
+          "name": "query",
+          "type": "string"
+        }
+      ],
+      "returns": "array",
+      "capability": "fs.read",
+      "deterministic": false,
+      "approval": false,
+      "description": "Search text files under dir for query; returns [{file,line,text}]. Bounded."
+    },
+    {
+      "name": "FS.COPY",
+      "id": 69,
+      "version": 1,
+      "params": [
+        {
+          "name": "src",
+          "type": "string"
+        },
+        {
+          "name": "dst",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "fs.write",
+      "deterministic": false,
+      "approval": false,
+      "description": "Copy a file within allowed roots (size-limited). Returns dst."
+    },
+    {
+      "name": "FS.GLOB",
+      "id": 70,
+      "version": 1,
+      "params": [
+        {
+          "name": "dir",
+          "type": "string"
+        },
+        {
+          "name": "pattern",
+          "type": "string"
+        }
+      ],
+      "returns": "array",
+      "capability": "fs.read",
+      "deterministic": false,
+      "approval": false,
+      "description": "Match file names under dir with an fnmatch pattern (recursive, bounded). Returns sorted relative paths."
+    },
+    {
+      "name": "FS.APPEND_TEXT",
+      "id": 71,
+      "version": 1,
+      "params": [
+        {
+          "name": "path",
+          "type": "string"
+        },
+        {
+          "name": "content",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "fs.write",
+      "deterministic": false,
+      "approval": false,
+      "description": "Append UTF-8 text to a file (total size limited). Returns path."
+    },
+    {
+      "name": "PROC.LIST",
+      "id": 80,
+      "version": 1,
+      "params": [],
+      "returns": "array",
+      "capability": "proc.list",
+      "deterministic": false,
+      "approval": false,
+      "description": "List permitted processes [{pid,name}]. May be filtered by platform backend."
+    },
+    {
+      "name": "PROC.LAUNCH",
+      "id": 81,
+      "version": 1,
+      "params": [
+        {
+          "name": "program",
+          "type": "string"
+        },
+        {
+          "name": "args",
+          "type": "array"
+        }
+      ],
+      "returns": "map",
+      "capability": "proc.launch",
+      "deterministic": false,
+      "approval": true,
+      "description": "Launch allowlisted program with validated args (no shell). Returns {pid}. Requires approval."
+    },
+    {
+      "name": "PROC.KILL",
+      "id": 82,
+      "version": 1,
+      "params": [
+        {
+          "name": "pid",
+          "type": "int"
+        }
+      ],
+      "returns": "string",
+      "capability": "proc.kill",
+      "deterministic": false,
+      "approval": true,
+      "description": "Request termination of authorized process. Requires approval."
+    },
+    {
+      "name": "SYS.INFO",
+      "id": 83,
+      "version": 1,
+      "params": [],
+      "returns": "map",
+      "capability": "sys.info",
+      "deterministic": false,
+      "approval": false,
+      "description": "Query {os,arch,python}."
+    },
+    {
+      "name": "SYS.ENV",
+      "id": 84,
+      "version": 1,
+      "params": [
+        {
+          "name": "name",
+          "type": "string"
+        }
+      ],
+      "returns": "string",
+      "capability": "sys.env",
+      "deterministic": false,
+      "approval": false,
+      "description": "Read one explicitly allowlisted environment variable. Anything else is denied."
+    },
+    {
+      "name": "TIME.NOW",
+      "id": 90,
+      "version": 1,
+      "params": [],
+      "returns": "int",
+      "capability": "sys.info",
+      "deterministic": false,
+      "approval": false,
+      "description": "Current Unix time (seconds). Non-deterministic by design."
+    },
+    {
+      "name": "NET.FETCH",
+      "id": 100,
+      "version": 1,
+      "params": [
+        {
+          "name": "url",
+          "type": "string"
+        }
+      ],
+      "returns": "map",
+      "capability": "net.fetch",
+      "deterministic": false,
+      "approval": true,
+      "description": "HTTPS/HTTP GET to an allowlisted host. Bounded size/timeout; redirects stay within the allowlist. Requires approval."
+    }
+  ]
+}

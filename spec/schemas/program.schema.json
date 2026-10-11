@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OZ program",
+  "type": "object",
+  "required": [
+    "name",
+    "statements"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "isa_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "statements": {
+      "type": "array"
+    }
+  }
+}
