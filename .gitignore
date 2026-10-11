@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Open Zen runtime artifacts (regenerated on demand)
+.openzen/
+demo/sandbox/
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS artifacts
+Thumbs.db
+.DS_Store

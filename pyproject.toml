@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openzen"
+version = "0.3.0"
+description = "Open Zen: AI-native instruction language and execution runtime"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+
+[project.scripts]
+openzen = "openzen.cli:main"
+oz = "openzen.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["openzen*"]
